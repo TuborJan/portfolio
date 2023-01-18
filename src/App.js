@@ -11,8 +11,8 @@ function App() {
     <ChakraProvider theme={theme}>
       <Header />
       <Home />
-      <Works />
       <Skills />
+      <Works />
     </ChakraProvider>
   );
 }

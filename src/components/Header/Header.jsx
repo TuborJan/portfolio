@@ -6,6 +6,7 @@ import {
   IconButton,
   useColorModeValue,
 } from '@chakra-ui/react';
+import { useEffect, useState } from 'react';
 import { ColorModeSwitcher } from '../../chakra/ColorModeSwitcher';
 import { HamburgerIcon } from '@chakra-ui/icons';
 
@@ -18,14 +19,33 @@ const Header = () => {
     'background.400'
   );
 
+  const [sticky, setSticky] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', isSticky);
+    return () => {
+      window.removeEventListener('scroll', isSticky);
+    };
+  });
+
+  const isSticky = () => {
+    const scrollTop = window.scrollY;
+    scrollTop >= 70 ? setSticky(true) : setSticky(false);
+  };
+
   return (
     <Box
       as={'header'}
       id="home"
+      position={sticky ? 'sticky' : 'relative'}
+      top={'0'}
+      zIndex={'10'}
+      w={'100%'}
       h={'10vh'}
       color={color}
       letterSpacing={'1px'}
       bg={bg}
+      boxShadow={sticky ? '2xl' : 'none'}
     >
       <Container maxW={'1300px'} px={'10px'}>
         <Flex justifyContent={'space-between'} alignItems={'center'} py={'8'}>
