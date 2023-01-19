@@ -21,7 +21,7 @@ const Works = () => {
   const buttonColor = useColorModeValue('background.100', 'text.300');
 
   return (
-    <Box id={'works'} color={color} bg={bg} py={'12'}>
+    <Box id={'works'} scrollMarginTop={'70px'} color={color} bg={bg} py={'12'}>
       <Container maxW={'1300px'} px={'10px'}>
         <Heading
           as={'h2'}
@@ -33,13 +33,16 @@ const Works = () => {
           Мои работы
         </Heading>
         <Link
+          display={'block'}
+          maxW={'785px'}
+          m={'0 auto'}
           _hover={{
             decoration: 'none',
           }}
         >
           <Flex
             flexDirection={'column'}
-            mb={'32'}
+            mb={'20'}
             textAlign={'center'}
             transition={'transform 0.3s ease-in-out'}
             _hover={{
@@ -48,10 +51,10 @@ const Works = () => {
           >
             <Image
               src={work1}
-              maxW={'785px'}
+              maxW={{ sm: '585px', md: '685px', lg: '785px' }}
               w={'100%'}
               m={'0 auto'}
-              mb={'2'}
+              mb={'4'}
             />
             <Heading as={'h3'} fontSize={{ sm: '1xl', md: '2xl' }}>
               Магазин кросовок
@@ -59,13 +62,16 @@ const Works = () => {
           </Flex>
         </Link>
         <Link
+          display={'block'}
+          maxW={'785px'}
+          m={'0 auto'}
           _hover={{
             decoration: 'none',
           }}
         >
           <Flex
             flexDirection={'column'}
-            mb={'32'}
+            mb={'20'}
             textAlign={'center'}
             transition={'transform 0.3s ease-in-out'}
             _hover={{
@@ -74,10 +80,10 @@ const Works = () => {
           >
             <Image
               src={work2}
-              maxW={'785px'}
+              maxW={{ sm: '585px', md: '685px', lg: '785px' }}
               w={'100%'}
               m={'0 auto'}
-              mb={'2'}
+              mb={'4'}
             />
             <Heading as={'h3'} fontSize={{ sm: '1xl', md: '2xl' }}>
               Лендинг
@@ -85,13 +91,16 @@ const Works = () => {
           </Flex>
         </Link>
         <Link
+          display={'block'}
+          maxW={'785px'}
+          m={'0 auto'}
           _hover={{
             decoration: 'none',
           }}
         >
           <Flex
             flexDirection={'column'}
-            mb={'32'}
+            mb={'20'}
             textAlign={'center'}
             transition={'transform 0.3s ease-in-out'}
             _hover={{
@@ -100,10 +109,10 @@ const Works = () => {
           >
             <Image
               src={work3}
-              maxW={'785px'}
+              maxW={{ sm: '585px', md: '685px', lg: '785px' }}
               w={'100%'}
               m={'0 auto'}
-              mb={'2'}
+              mb={'4'}
             />
             <Heading as={'h3'} fontSize={{ sm: '1xl', md: '2xl' }}>
               Лендинг

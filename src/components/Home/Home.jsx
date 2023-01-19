@@ -14,7 +14,7 @@ import {
 } from '@chakra-ui/react';
 import img from './../../img/home/developer-activity-animate.svg';
 
-const Home = () => {
+const Home = ({ sticky }) => {
   const color = useColorModeValue('#595959', '#e7eaef');
   const bg = useColorModeValue('background.100', 'background.300');
   const buttonBg = useColorModeValue('text.200', 'text.400');
@@ -36,9 +36,11 @@ const Home = () => {
 
   return (
     <Center
+      id={'home'}
       minH={'90vh'}
       h={'auto'}
       py={{ sm: '0', md: '8' }}
+      mt={{ sm: '0', md: sticky ? '100px' : '0' }}
       color={color}
       bgColor={bg}
       letterSpacing={'1px'}

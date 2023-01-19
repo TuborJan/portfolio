@@ -20,7 +20,7 @@ const Skills = () => {
   const bg = useColorModeValue('background.200', 'background.400');
 
   return (
-    <Box id={'skills'} color={color} bg={bg} py={'12'}>
+    <Box id={'skills'} scrollMarginTop={'70px'} color={color} bg={bg} py={'12'}>
       <Container maxW={'1300px'} px={'10px'}>
         <Flex flexDirection={'column'}>
           <Heading

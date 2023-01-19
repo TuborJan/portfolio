@@ -1,10 +1,20 @@
-import React from 'react';
+import {
+  Box,
+  Flex,
+  Container,
+  Link,
+  Heading,
+  Image,
+  Button,
+  useColorModeValue,
+  Center,
+} from '@chakra-ui/react';
 
 const Contacts = () => {
   return (
-    <div>
-      <h1>contacts</h1>
-    </div>
+    <Box>
+      <Container></Container>
+    </Box>
   );
 };
 
