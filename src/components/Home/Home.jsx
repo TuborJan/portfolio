@@ -60,17 +60,18 @@ const Home = ({ sticky }) => {
             flexDirection={{ sm: 'column', md: 'row' }}
             alignItems={{ sm: 'center', md: 'normal' }}
             justifyContent={'space-between'}
-            maxW={{ sm: '420px', md: '2xl' }}
+            maxW={{ sm: '420px', md: '3xl' }}
             w={{ md: '2xl' }}
-            m={{ sm: '0 auto' }}
+            m={{ sm: '0 auto', md: '0' }}
           >
             <Flex
+              mr={{ sm: '0', md: '24' }}
+              py={{ sm: '3', md: '28' }}
               flexDirection={{ sm: 'row', md: 'column' }}
               alignItems={{ sm: 'center', md: 'normal' }}
               gap={{ sm: '5', md: '0' }}
-              py={{ sm: '3', md: '28' }}
             >
-              <Link>
+              <Link href="https://t.me/TuborJan" target={'_blank'}>
                 <Box
                   mb={{ sm: '0', md: '32px' }}
                   transition={'transform 0.3s ease-in-out'}
@@ -95,7 +96,7 @@ const Home = ({ sticky }) => {
                   </svg>
                 </Box>
               </Link>
-              <Link>
+              <Link href="https://github.com/TuborJan" target={'_blank'}>
                 <Box
                   mb={{ sm: '0', md: '32px' }}
                   transition={'transform 0.3s ease-in-out'}
@@ -120,7 +121,7 @@ const Home = ({ sticky }) => {
                   </svg>
                 </Box>
               </Link>
-              <Link>
+              <Link href="https://wa.me/79774512203" target={'_blank'}>
                 <Box
                   transition={'transform 0.3s ease-in-out'}
                   _hover={{
@@ -128,32 +129,26 @@ const Home = ({ sticky }) => {
                   }}
                 >
                   <svg
-                    width="34"
-                    height="27"
-                    viewBox="0 0 34 27"
-                    fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="icon icon-tabler icon-tabler-brand-whatsapp"
+                    width="34"
+                    height="34"
+                    viewBox="0 0 24 24"
+                    strokeWidth="2"
+                    stroke={color}
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   >
-                    <path
-                      d="M29.4444 1H4.55556C2.59188 1 1 2.59898 1 4.57143V22.4286C1 24.401 2.59188 26 4.55556 26H29.4444C31.4081 26 33 24.401 33 22.4286V4.57143C33 2.59898 31.4081 1 29.4444 1Z"
-                      stroke={color}
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M1 3L17 14L33 3"
-                      stroke={color}
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
+                    <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1"></path>
                   </svg>
                 </Box>
               </Link>
             </Flex>
             <Box
-              maxW={{ md: '400px', lg: '2xl' }}
+              maxW={{ md: '400px', lg: '3xl' }}
               py={{ sm: '2', md: '12' }}
               textAlign={{ sm: 'center', md: 'start' }}
             >
@@ -183,31 +178,37 @@ const Home = ({ sticky }) => {
               </Flex>
               <Text
                 textAlign={{ sm: 'justify', md: 'start' }}
-                maxW={{ sm: '400px', md: '450px' }}
-                mb={{ sm: '12', md: '24' }}
+                maxW={{ sm: '400px', md: '600px' }}
+                mb={{ sm: '6', md: '24' }}
                 fontSize={{ sm: '1.15rem', md: '2xl' }}
               >
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
+                Я начинающий разработчик. На данный момент работаю фрилансером.
               </Text>
-              <Button
-                w={'218px'}
-                h={'69px'}
-                mb={{ sm: '12', md: '28' }}
-                color={buttonColor}
-                backgroundColor={buttonBg}
-                borderRadius={'25px'}
+              <Link
+                href="#contacts"
                 _hover={{
-                  color: buttonBg,
-                  backgroundColor: buttonColor,
-                  border: '1px solid',
-                  borderColor: 'text.200',
+                  textDecoration: 'none',
                 }}
               >
-                Связаться
-              </Button>
+                <Button
+                  w={'218px'}
+                  h={'69px'}
+                  mb={{ sm: '12', md: '28' }}
+                  color={buttonColor}
+                  backgroundColor={buttonBg}
+                  borderRadius={'25px'}
+                  _hover={{
+                    color: buttonBg,
+                    backgroundColor: buttonColor,
+                    border: '1px solid',
+                    borderColor: 'text.200',
+                  }}
+                >
+                  Связаться
+                </Button>
+              </Link>
               <Link
-                href="#skills"
+                href="#about"
                 _hover={{
                   textDecoration: 'none',
                 }}

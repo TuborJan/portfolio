@@ -16,7 +16,7 @@ import work3 from './../../img/works/Work3.png';
 
 const Works = () => {
   const color = useColorModeValue('#595959', '#e7eaef');
-  const bg = useColorModeValue('background.100', 'background.300');
+  const bg = useColorModeValue('background.200', 'background.400');
   const buttonBg = useColorModeValue('text.200', 'text.400');
   const buttonColor = useColorModeValue('background.100', 'text.300');
 
@@ -30,9 +30,11 @@ const Works = () => {
           fontSize={{ sm: '3xl', md: '4xl' }}
           fontWeight={'300'}
         >
-          Мои работы
+          Примеры работ
         </Heading>
         <Link
+          href={'https://tuborjan.github.io/sneakers/'}
+          target={'_blank'}
           display={'block'}
           maxW={'785px'}
           m={'0 auto'}
@@ -40,28 +42,31 @@ const Works = () => {
             decoration: 'none',
           }}
         >
-          <Flex
-            flexDirection={'column'}
-            mb={'20'}
-            textAlign={'center'}
-            transition={'transform 0.3s ease-in-out'}
-            _hover={{
-              transform: 'scale(1.1)',
-            }}
-          >
-            <Image
-              src={work1}
+          <Flex flexDirection={'column'} mb={'20'} textAlign={'center'}>
+            <Box
               maxW={{ sm: '585px', md: '685px', lg: '785px' }}
-              w={'100%'}
               m={'0 auto'}
-              mb={'4'}
-            />
+              overflow="hidden"
+            >
+              <Image
+                src={work1}
+                maxW={{ sm: '585px', md: '685px', lg: '785px' }}
+                w={'100%'}
+                mb={'4'}
+                transition={'transform 0.3s ease-in-out'}
+                _hover={{
+                  transform: 'scale(1.1)',
+                }}
+              />
+            </Box>
             <Heading as={'h3'} fontSize={{ sm: '1xl', md: '2xl' }}>
               Магазин кросовок
             </Heading>
           </Flex>
         </Link>
         <Link
+          href={'https://tuborjan.github.io/bicycle/'}
+          target={'_blank'}
           display={'block'}
           maxW={'785px'}
           m={'0 auto'}
@@ -69,28 +74,32 @@ const Works = () => {
             decoration: 'none',
           }}
         >
-          <Flex
-            flexDirection={'column'}
-            mb={'20'}
-            textAlign={'center'}
-            transition={'transform 0.3s ease-in-out'}
-            _hover={{
-              transform: 'scale(1.1)',
-            }}
-          >
-            <Image
-              src={work2}
+          <Flex flexDirection={'column'} mb={'20'} textAlign={'center'}>
+            <Box
               maxW={{ sm: '585px', md: '685px', lg: '785px' }}
-              w={'100%'}
               m={'0 auto'}
-              mb={'4'}
-            />
+              overflow="hidden"
+            >
+              <Image
+                src={work2}
+                maxW={{ sm: '585px', md: '685px', lg: '785px' }}
+                w={'100%'}
+                mb={'4'}
+                transition={'transform 0.3s ease-in-out'}
+                _hover={{
+                  transform: 'scale(1.1)',
+                }}
+              />
+            </Box>
+
             <Heading as={'h3'} fontSize={{ sm: '1xl', md: '2xl' }}>
               Лендинг
             </Heading>
           </Flex>
         </Link>
         <Link
+          href={'https://tuborjan.github.io/designer/'}
+          target={'_blank'}
           display={'block'}
           maxW={'785px'}
           m={'0 auto'}
@@ -98,22 +107,23 @@ const Works = () => {
             decoration: 'none',
           }}
         >
-          <Flex
-            flexDirection={'column'}
-            mb={'20'}
-            textAlign={'center'}
-            transition={'transform 0.3s ease-in-out'}
-            _hover={{
-              transform: 'scale(1.1)',
-            }}
-          >
-            <Image
-              src={work3}
+          <Flex flexDirection={'column'} mb={'20'} textAlign={'center'}>
+            <Box
               maxW={{ sm: '585px', md: '685px', lg: '785px' }}
-              w={'100%'}
               m={'0 auto'}
-              mb={'4'}
-            />
+              overflow="hidden"
+            >
+              <Image
+                src={work3}
+                maxW={{ sm: '585px', md: '685px', lg: '785px' }}
+                w={'100%'}
+                mb={'4'}
+                transition={'transform 0.3s ease-in-out'}
+                _hover={{
+                  transform: 'scale(1.1)',
+                }}
+              />
+            </Box>
             <Heading as={'h3'} fontSize={{ sm: '1xl', md: '2xl' }}>
               Лендинг
             </Heading>

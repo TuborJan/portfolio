@@ -40,7 +40,7 @@ const Header = ({ sticky }) => {
       color={color}
       letterSpacing={'1px'}
       bg={bg}
-      boxShadow={sticky ? '2xl' : 'none'}
+      boxShadow={sticky ? 'xl' : 'none'}
     >
       <Container maxW={'1300px'} px={'10px'}>
         <Flex
@@ -51,8 +51,8 @@ const Header = ({ sticky }) => {
           <ColorModeSwitcher justifySelf={'flex-end'} />
           <Flex
             display={['none', 'none', 'flex', 'flex']}
-            w={'600px'}
-            fontSize={'24px'}
+            w={'700px'}
+            fontSize={'20px'}
             justifyContent={'space-between'}
             alignItems={'center'}
           >
@@ -64,6 +64,15 @@ const Header = ({ sticky }) => {
               }}
             >
               Начало
+            </Link>
+            <Link
+              href="#about"
+              _hover={{
+                color: `${hoverColor}`,
+                textDecoration: 'underline',
+              }}
+            >
+              Обо мне
             </Link>
             <Link
               href="#skills"
@@ -84,7 +93,7 @@ const Header = ({ sticky }) => {
               Работы
             </Link>
             <Link
-              href="#contact"
+              href="#contacts"
               _hover={{
                 color: `${hoverColor}`,
                 textDecoration: 'underline',
@@ -121,8 +130,8 @@ const Header = ({ sticky }) => {
               borderTopRadius={'15px'}
               boxShadow={'dark-lg'}
             >
-              <DrawerBody px={'2'} py={'4'}>
-                <SimpleGrid columns={2} spacingY={'7'} mt={'4'}>
+              <DrawerBody px={'3'} py={'4'}>
+                <SimpleGrid columns={3} spacingY={'7'} mt={'4'}>
                   <Flex justifyContent={'center'}>
                     <Link href={'#home'} onClick={onClose}>
                       <Flex maxW={'24px'} m={'0 auto'}>
@@ -153,6 +162,22 @@ const Header = ({ sticky }) => {
                         </svg>
                       </Flex>
                       <Text>Навыки</Text>
+                    </Link>
+                  </Flex>
+                  <Flex justifyContent={'center'}>
+                    <Link href={'#about'} onClick={onClose}>
+                      <Flex maxW={'24px'} m={'0 auto'}>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill={color}
+                            d="M19,2H5A3,3,0,0,0,2,5V19a3,3,0,0,0,3,3H19a2.81,2.81,0,0,0,.49-.05l.3-.07.07,0h0l.05,0,.37-.14.13-.07c.1-.06.21-.11.31-.18a3.79,3.79,0,0,0,.38-.32l.07-.09a2.69,2.69,0,0,0,.27-.32l.09-.13a2.31,2.31,0,0,0,.18-.35,1,1,0,0,0,.07-.15c.05-.12.08-.25.12-.38l0-.15A2.6,2.6,0,0,0,22,19V5A3,3,0,0,0,19,2ZM5,20a1,1,0,0,1-1-1V14.69l3.29-3.3h0a1,1,0,0,1,1.42,0L17.31,20Zm15-1a1,1,0,0,1-.07.36,1,1,0,0,1-.08.14.94.94,0,0,1-.09.12l-5.35-5.35.88-.88a1,1,0,0,1,1.42,0h0L20,16.69Zm0-5.14L18.12,12a3.08,3.08,0,0,0-4.24,0l-.88.88L10.12,10a3.08,3.08,0,0,0-4.24,0L4,11.86V5A1,1,0,0,1,5,4H19a1,1,0,0,1,1,1Z"
+                          />
+                        </svg>
+                      </Flex>
+                      <Text>Обо мне</Text>
                     </Link>
                   </Flex>
                   <Flex justifyContent={'center'}>
