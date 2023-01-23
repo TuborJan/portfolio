@@ -121,7 +121,10 @@ const Home = ({ sticky }) => {
                   </svg>
                 </Box>
               </Link>
-              <Link href="https://wa.me/79774512203" target={'_blank'}>
+              <Link
+                href="https://www.linkedin.com/in/dmitry-kalyta-1342a8263"
+                target={'_blank'}
+              >
                 <Box
                   transition={'transform 0.3s ease-in-out'}
                   _hover={{
@@ -129,20 +132,16 @@ const Home = ({ sticky }) => {
                   }}
                 >
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="icon icon-tabler icon-tabler-brand-whatsapp"
                     width="34"
                     height="34"
-                    viewBox="0 0 24 24"
-                    strokeWidth="2"
-                    stroke={color}
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
+                    xmlns="http://www.w3.org/2000/svg"
+                    dataName="Layer 1"
+                    viewBox="2 2 20 20"
                   >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
-                    <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1"></path>
+                    <path
+                      fill={color}
+                      d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"
+                    />
                   </svg>
                 </Box>
               </Link>

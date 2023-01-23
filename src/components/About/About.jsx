@@ -6,15 +6,28 @@ import {
   Text,
   useColorModeValue,
 } from '@chakra-ui/react';
+import { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
   const color = useColorModeValue('#595959', '#e7eaef');
   const bg = useColorModeValue('background.200', 'background.400');
 
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
   return (
-    <Box id={'about'} bg={bg} color={color} scrollMarginTop={'70px'}>
+    <Box
+      id={'about'}
+      bg={bg}
+      color={color}
+      scrollMarginTop={'70px'}
+      overflow={'hidden'}
+    >
       <Container maxW={'600px'} py={'12'} textAlign={'center'}>
-        <Center flexDirection={'column'}>
+        <Center flexDirection={'column'} data-aos={'fade-right'}>
           <Heading
             as={'h2'}
             mb={'6'}
