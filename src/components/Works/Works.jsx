@@ -28,15 +28,8 @@ const Works = () => {
   }, []);
 
   return (
-    <Box
-      id={'works'}
-      scrollMarginTop={'70px'}
-      color={color}
-      bg={bg}
-      py={'12'}
-      overflow={'hidden'}
-    >
-      <Container maxW={'1300px'} px={'10px'}>
+    <Box id={'works'} scrollMarginTop={'70px'} color={color} bg={bg} py={'12'}>
+      <Container maxW={'1300px'} px={'10px'} overflow={'hidden'}>
         <Heading
           as={'h2'}
           mb={'12'}

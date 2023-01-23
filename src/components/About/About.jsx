@@ -19,14 +19,13 @@ const About = () => {
   }, []);
 
   return (
-    <Box
-      id={'about'}
-      bg={bg}
-      color={color}
-      scrollMarginTop={'70px'}
-      overflow={'hidden'}
-    >
-      <Container maxW={'600px'} py={'12'} textAlign={'center'}>
+    <Box id={'about'} bg={bg} color={color} scrollMarginTop={'70px'}>
+      <Container
+        maxW={'600px'}
+        py={'12'}
+        textAlign={'center'}
+        overflow={'hidden'}
+      >
         <Center flexDirection={'column'} data-aos={'fade-right'}>
           <Heading
             as={'h2'}
