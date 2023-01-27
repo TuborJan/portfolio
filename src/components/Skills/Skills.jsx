@@ -73,7 +73,7 @@ const Skills = () => {
                   <AccordionIcon />
                 </AccordionButton>
                 <AccordionPanel maxW={'400px'} p={6} m={'0 auto'}>
-                  <Flex flexWrap={'wrap'} gap={16}>
+                  <Flex justifyContent={'center'} flexWrap={'wrap'} gap={16}>
                     <Box maxW={{ sm: '50px', md: '60px' }}>
                       <Image src={html} w={'100%'} />
                     </Box>
@@ -121,7 +121,7 @@ const Skills = () => {
                   <AccordionIcon />
                 </AccordionButton>
                 <AccordionPanel maxW={'320px'} p={6} m={'0 auto'}>
-                  <Flex flexWrap={'wrap'} gap={16}>
+                  <Flex justifyContent={'center'} flexWrap={'wrap'} gap={16}>
                     <Box maxW={{ sm: '50px', md: '60px' }}>
                       <Image src={figma} w={'100%'} />
                     </Box>

@@ -149,6 +149,8 @@ const Works = () => {
 
         <Center>
           <Link
+            href="https://github.com/TuborJan?tab=repositories"
+            target={'_blank'}
             _hover={{
               textDecoration: 'none',
             }}
