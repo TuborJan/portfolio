@@ -24,7 +24,11 @@ const Works = () => {
   const buttonColor = useColorModeValue('background.100', 'text.300');
 
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({
+      offset: 150,
+      duration: 1500,
+      anchorPlacement: 'top-center',
+    });
   }, []);
 
   return (
