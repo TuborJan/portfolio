@@ -175,14 +175,10 @@ const Home = ({ sticky }) => {
                   Фронтенд разработчик
                 </Text>
               </Flex>
-              <Text
-                textAlign={{ sm: 'justify', md: 'start' }}
+              <Box
                 maxW={{ sm: '400px', md: '600px' }}
                 mb={{ sm: '6', md: '24' }}
-                fontSize={{ sm: '1.15rem', md: '2xl' }}
-              >
-                Я начинающий разработчик. На данный момент работаю фрилансером.
-              </Text>
+              ></Box>
               <Link
                 href="#contacts"
                 _hover={{
