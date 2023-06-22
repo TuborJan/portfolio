@@ -45,7 +45,7 @@ const Works = () => {
         </Heading>
         <Box data-aos={'fade-right'}>
           <Link
-            href={'https://tuborjan.github.io/sneakers/'}
+            href={'https://countries-list-iluydceai-tuborjan.vercel.app/'}
             target={'_blank'}
             display={'block'}
             maxW={'785px'}
@@ -79,7 +79,7 @@ const Works = () => {
         </Box>
         <Box data-aos={'fade-left'}>
           <Link
-            href={'https://tuborjan.github.io/bicycle/'}
+            href={'https://tuborjan.github.io/sneakers/'}
             target={'_blank'}
             display={'block'}
             maxW={'785px'}
@@ -114,7 +114,7 @@ const Works = () => {
         </Box>
         <Box data-aos={'fade-right'}>
           <Link
-            href={'https://tuborjan.github.io/designer/'}
+            href={'https://tuborjan.github.io/bicycle/'}
             target={'_blank'}
             display={'block'}
             maxW={'785px'}
