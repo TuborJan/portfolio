@@ -72,7 +72,7 @@ const Works = () => {
                 />
               </Box>
               <Heading as={'h3'} fontSize={{ sm: '1xl', md: '2xl' }}>
-                Магазин кросовок
+                Информация о странах
               </Heading>
             </Flex>
           </Link>
@@ -107,7 +107,7 @@ const Works = () => {
               </Box>
 
               <Heading as={'h3'} fontSize={{ sm: '1xl', md: '2xl' }}>
-                Лендинг
+                Магазин кросовок
               </Heading>
             </Flex>
           </Link>

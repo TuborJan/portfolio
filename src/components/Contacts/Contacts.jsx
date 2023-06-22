@@ -10,7 +10,6 @@ import {
 } from '@chakra-ui/react';
 
 import telegram from './../../img/contacts/telegram.svg';
-import whatsapp from './../../img/contacts/whatsapp.svg';
 import instagram from './../../img/contacts/instagram.svg';
 import linkedin from './../../img/contacts/linkedin.svg';
 
@@ -45,21 +44,6 @@ const Contacts = () => {
               <Image src={telegram} w={'100%'} />
             </Box>
             <Text>telegram</Text>
-          </Link>
-          <Link
-            href="https://wa.me/79774512203"
-            target={'_blank'}
-            maxW={'72px'}
-            textAlign={'center'}
-            transition={'transform 0.3s ease-in-out'}
-            _hover={{
-              transform: 'scale(1.1)',
-            }}
-          >
-            <Box maxW={{ sm: '50px', md: '60px' }} m={'0 auto'}>
-              <Image src={whatsapp} w={'100%'} />
-            </Box>
-            <Text>whatsapp</Text>
           </Link>
           <Link
             href="https://www.linkedin.com/in/dmitry-kalyta-1342a8263/"
